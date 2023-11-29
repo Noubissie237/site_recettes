@@ -1,0 +1,184 @@
+:root
+{
+    --var-blue-principal :#8ba1bb;
+    --var-blanc : #fff;
+    --var-noir : #000;
+    --var-police : Arial;
+    --var-bleu-secondaire : #6c829d
+}
+
+*
+{
+    overflow: auto;
+}
+
+body
+{
+    background-color: var(--var-blue-principal);
+    font-family: var(--var-police);
+}
+
+p.categorie
+{
+    background-color: var(--var-noir);
+    color: var(--var-blanc);
+    display: inline-block;
+    padding: 8px 18px;
+    margin-top: -15px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+div.categorie
+{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    overflow: visible;
+}
+
+div.contenu
+{
+    background-color: var(--var-blanc);
+    margin: 60px 10% 80px 10%;
+    padding: 0px 30px 30px 30px;
+    min-width: 350px;
+    box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.1);
+    overflow: visible;
+}
+
+h1
+{
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+p.description
+{
+    text-align: center;
+    display: inline-block;
+    max-width: 400px;
+    font-size: 14px;
+}
+
+.centre
+{
+    text-align: center;
+    width: 100%;
+}
+
+div.separateur
+{
+    height: 1px;
+    width: 100px;
+    background-color: var(--var-noir);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.infos
+{
+    position: relative
+}
+
+table.infos
+{
+    position: absolute; 
+    bottom: 0; 
+    width: 100%;
+    color:white;
+    background-color: #6c829dc0; 
+    height: 80px; 
+}
+
+table.infos td
+{
+    text-align: center;
+    font-size: 14px;
+    vertical-align: top;
+}
+
+table.infos th
+{
+    font-size: 16px;
+    vertical-align: bottom;
+    padding-bottom: 8px;
+}
+
+img.infos
+{
+    display: block;  
+    max-height: 400px;
+    object-fit: cover; /* l'image s'agrandit en gardant les bonnes proportions, quitte à faire du zoom */
+    min-height: 200px;
+    background-color: lightgrey;
+}
+
+div.colonne
+{
+    width: 45%;
+    margin-top: 20px;
+}
+
+div.colonne1
+{
+    display: inline-block;
+    margin-right: 10%;
+}
+
+div.colonne2
+{
+    float : right;
+}
+
+div.colonne h2
+{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    border-bottom: 5px solid var(--var-bleu-secondaire);
+    padding-bottom: 5px;
+}
+
+div.ingredients p
+{
+    border : 1px solid lightgray;
+    padding: 8px 0;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 4px;
+    margin-bottom: 0;
+}
+
+table.preparation p.numero
+{
+    background-color: var(--var-bleu-secondaire);
+    color: var(--var-blanc);
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top:4px;
+    box-sizing: border-box; /* On conserve la taille total à 25px malgres le padding*/
+    border-radius: 50%;
+    margin: 0;
+}
+
+table.preparation td
+{
+    vertical-align: top;
+}
+
+table.preparation td.preparation_step
+{
+    font-size: 14px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+table.preparation tr
+{
+    height: 40px;
+}
